@@ -1,0 +1,8 @@
+src/*/doc/ganesha-config.8
+src/*/doc/ganesha-core-config.8
+src/*/doc/ganesha-export-config.8
+src/*/doc/ganesha-log-config.8
+src/*/doc/ganesha-ceph-config.8
+src/*/doc/ganesha-rgw-config.8
+src/*/doc/ganesha-vfs-config.8
+

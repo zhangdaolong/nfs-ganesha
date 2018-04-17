@@ -1,0 +1,11 @@
+*.log
+*.auto
+*.debhelper
+*.substvars
+.debhelper
+files
+libntirpc1
+nfs-ganesha
+debhelper-build-stamp
+source
+tmp

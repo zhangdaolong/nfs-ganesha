@@ -1,0 +1,58 @@
+Source: nfs-ganesha
+Section: net
+Priority: optional
+Maintainer: Paul Emmerich <paul.emmerich@croit.io>
+Standards-Version: 3.9.8
+Homepage: https://croit.io
+Build-Depends: debhelper (>= 9),
+               bison,
+               flex,
+               cmake,
+               libdbus-1-dev,
+               libnfsidmap-dev,
+               libwbclient-dev,
+               libkrb5-dev,
+               libblkid-dev,
+               libattr1-dev,
+               libacl1-dev,
+               xfslibs-dev,
+               uuid-dev,
+               libcap-dev,
+               librgw-dev,
+               libcephfs-dev,
+               python-dev,
+               dh-python,
+               dh-systemd,
+               python-sphinx,
+               pkgconf
+Vcs-Git: https://github.com/croit/nfs-ganesha.git
+
+Package: nfs-ganesha
+Architecture: any
+Depends: dbus,
+         nfs-common,
+         rpcbind,
+         ${perl:Depends},
+         ${misc:Depends},
+         libwbclient0,
+         libntirpc1 (>= 1.5.3),
+         libtirpc1,
+         libcephfs2,
+         daemon
+Description: nfs-ganesha is a NFS server in User Space
+ NFS-GANESHA is a NFS Server running in user space with a large cache.
+ It comes with various backend modules to support different file systems
+ and namespaces. Supported name spaces are POSIX, PROXY, SNMP, FUSE-like,
+ HPSS, LUSTRE, XFS and ZFS.
+
+Package: libntirpc1
+Section: libs
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, libtirpc1
+Description: new transport-independent RPC library
+ This package contains a port of Sun's transport-independent RPC library to
+ Linux. The library is intended as a replacement for the RPC code in the GNU C
+ library, providing among others support for RPC (and in turn, NFS) over IPv6.
+
