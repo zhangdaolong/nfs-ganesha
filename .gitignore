@@ -11,6 +11,7 @@ src/pkg-deb/
 .libs/
 CMakeFiles/
 build/
+src/obj-x86_64-linux-gnu/
 
 # files
 *.kdevelop*

@@ -1,0 +1,7 @@
+etc/ganesha/ganesha.conf
+etc/default/nfs-ganesha
+etc/dbus-1/system.d/nfs-ganesha-dbus.conf
+lib/systemd/system/nfs-ganesha*
+usr/bin/ganesha.nfsd
+usr/lib/ganesha/nfs-ganesha-config.sh
+usr/lib/*/ganesha/lib*.so*
