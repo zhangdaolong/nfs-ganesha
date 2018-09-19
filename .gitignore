@@ -12,6 +12,7 @@ src/docker/
 .libs/
 CMakeFiles/
 build/
+src/obj-x86_64-linux-gnu/
 
 # files
 *.kdevelop*
