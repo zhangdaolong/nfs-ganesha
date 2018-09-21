@@ -309,6 +309,7 @@ int nfs3_read(nfs_arg_t *arg, struct svc_req *req, nfs_res_t *res)
 
 	/* Do the actual read */
 	obj->obj_ops->read2(obj, true, nfs3_read_cb, read_arg, &read_data);
+	res->res_read3.READ3res_u.resok.eof = read_arg->end_of_file;
 	return read_data.rc;
 
 putref:
